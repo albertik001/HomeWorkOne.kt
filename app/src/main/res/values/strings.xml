@@ -2,4 +2,5 @@
     <string name="app_name">HomeWorkOne.kt</string>
     <string name="next">NEXT</string>
     <string name="enter_text">Введите Текст!</string>
+    <string name="placeholder_field">Заполните поле!</string>
 </resources>

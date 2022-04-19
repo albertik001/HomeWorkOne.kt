@@ -6,6 +6,7 @@ import androidx.activity.result.ActivityResultCallback
 import androidx.appcompat.app.AppCompatActivity
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.geektech.homeworkonekt.R
+import com.geektech.homeworkonekt.common.Constants.SECOND_KEY
 import com.geektech.homeworkonekt.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(R.layout.activity_main) {
@@ -22,14 +23,16 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         })
         binding.btnNext.setOnClickListener {
             if (binding.etInfo.text.isEmpty())
-                Toast.makeText(this, "Заполните поле!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.placeholder_field), Toast.LENGTH_SHORT).show()
             else
                 register.launch(binding.etInfo.text.toString())
         }
     }
 
     private fun getIntents() {
-        val intent = intent.getStringExtra("SECOND_KEY")
+        val intent = intent.getStringExtra(SECOND_KEY)
         binding.etInfo.setText(intent)
+        binding.etInfo.setSelection(binding.etInfo.text.length)
+
     }
 }
