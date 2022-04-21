@@ -24,9 +24,9 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
     ) { result ->
         if (result.resultCode == Activity.RESULT_OK) {
             val intent = result.data;
-            binding.etInfo.setText(intent!!.getStringExtra(SECOND_KEY))
+            binding.etInfo.setText(intent?.getStringExtra(SECOND_KEY))
             binding.etInfo.setSelection(binding.etInfo.text.length)
-            println("${intent.getStringExtra(SECOND_KEY)}")
+            println("${intent?.getStringExtra(SECOND_KEY)}")
         }
     }
 
