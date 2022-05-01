@@ -20,11 +20,13 @@ class SecondActivity : AppCompatActivity(R.layout.activity_second) {
 
     private fun transit() {
         binding.btnNext.setOnClickListener {
-            if (binding.etInfo.text.isEmpty())
+            if (binding.etInfo.text.isEmpty()){
                 Toast.makeText(this, getString(R.string.placeholder_field), Toast.LENGTH_SHORT)
                     .show()
-            else
+            }
+            else{
                 sendMessage(binding.etInfo.text.toString())
+            }
         }
     }
 
@@ -36,6 +38,5 @@ class SecondActivity : AppCompatActivity(R.layout.activity_second) {
     private fun getIntents() {
         binding.etInfo.setText(intent.getStringExtra(MAIN_KEY))
         binding.etInfo.setSelection(binding.etInfo.text.length)
-
     }
 }
