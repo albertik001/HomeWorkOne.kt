@@ -32,7 +32,6 @@ class SecondActivity : AppCompatActivity(R.layout.activity_second) {
 
     private fun sendMessage(message: String) {
         setResult(RESULT_OK, Intent().putExtra(SECOND_KEY, message))
-        finish()
     }
 
     private fun getIntents() {
