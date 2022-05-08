@@ -37,5 +37,6 @@ class SecondActivity : AppCompatActivity(R.layout.activity_second) {
     private fun getIntents() {
         binding.etInfo.setText(intent.getStringExtra(MAIN_KEY))
         binding.etInfo.setSelection(binding.etInfo.text.length)
+        binding.etInfo.setSelection(binding.etInfo.text.length)
     }
 }
