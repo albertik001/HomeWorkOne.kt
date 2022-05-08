@@ -28,6 +28,11 @@ class SecondActivity : AppCompatActivity(R.layout.activity_second) {
                 sendMessage(binding.etInfo.text.toString())
                 sendMessage(binding.etInfo.text.toString())
                 sendMessage(binding.etInfo.text.toString())
+                sendMessage(binding.etInfo.text.toString())
+                sendMessage(binding.etInfo.text.toString())
+                sendMessage(binding.etInfo.text.toString())
+                sendMessage(binding.etInfo.text.toString())
+                sendMessage(binding.etInfo.text.toString())
             }
         }
     }
