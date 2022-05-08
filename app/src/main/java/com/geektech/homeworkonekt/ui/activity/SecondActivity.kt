@@ -35,6 +35,10 @@ class SecondActivity : AppCompatActivity(R.layout.activity_second) {
         setResult(RESULT_OK, Intent().putExtra(SECOND_KEY, message))
         finish()
         finish()
+        finish()
+        finish()
+        finish()
+        finish()
     }
 
     private fun getIntents() {
